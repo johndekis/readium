@@ -1,0 +1,29 @@
+{{#each articles}}
+    {{#unless saved}}
+<li class="article-block">
+   <div class='panel panel-default' data-id="{{_id}}">
+                              
+            <a class='article-link' target='_blank' href='{{link}}'>
+                <h4 class="title">{{title}}</h4>
+            </a>
+            
+             {{#if author}}
+                <p class="author"> {{author}}</p>
+            {{/if}}
+            {{#unless author}}
+                <p class="author">popular</p>
+            {{/unless}}                   
+           <div class="comments" id={{_id}}></div>
+
+           {{#if comment}}                
+                <button class="comment-btn btn" >view</button>
+                {{!-- <button class="delete-comment-btn btn" data-id={{comment._id}} >delete</button> --}}
+            {{/if}}
+            {{#unless comment}}
+                <button class="comment-btn btn" >add comment</button>
+            {{/unless}}        
+            <button class='btn btn-success save'> save article </button>
+    </div> 
+</li>
+    {{/unless}}
+{{/each}}

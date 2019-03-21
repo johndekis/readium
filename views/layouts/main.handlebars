@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {{!-- bootstrap --}}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    {{!-- fonts --}}
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    {{!--    Facicon      --}}
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">    
+    <title>Readium</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="/">Readium</a>
+          </div>
+            
+           <!-- hamburger button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" id="hamburger"
+              aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+            </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+            <ul class="nav navbar-nav mr-auto">
+              <li class="nav-item"><a class="nav-link" href="/saved">saved</a></li>
+              <li><a href="/clear">clear all</a></li>
+              <li><a href="/scrape-new">new articles</a></li>
+              <li><a href="/scrape-popular">popular articles</a></li>
+            </ul>
+          </div>
+         
+        </div>
+      </nav>
+
+  <div>
+     {{{ body }}}
+  </div>
+  
+    <footer class="footer">
+    <div class="container">
+        <p>Readium Headline Scraper</p>
+    </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    {{!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> --}}
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script> 
+    <script src="app.js"></script>   
+</body>
+</html>

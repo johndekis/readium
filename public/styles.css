@@ -1,0 +1,219 @@
+body {
+    background-color: #333;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+a {
+    color: black;
+}
+
+.caption {
+    background-color: #333;
+}
+
+.caption h1 {
+    font-size: 9em;
+    font-weight: 800;
+    margin-top: .85em;
+    padding: .2em .2em 0 .2em;
+    color: #0cd7cf;
+    text-shadow: 0.05em 0.05em 0.05em  #04615e;
+}
+
+.caption p, h5 {
+    color: lightgrey;
+}
+
+.caption h5 {
+    
+    padding: 1em;
+}
+
+.top {
+  margin-top: 5em; 
+  margin-bottom: -5em; 
+}
+
+.saved {
+    margin-top: 5em;
+}
+
+.unsaved {
+    position: relative;
+    top: -6em;
+}
+
+/*   Navbar Styles   */
+/* ============================================================= */
+#hamburger {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
+    height: 2em;
+    width: 2em;
+    border: none;
+    float: right;
+    margin-top: .5em;
+}
+
+#hamburger:active {
+    border: 3px solid #0cd7cf;
+    border-radius: 50%;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.856); 
+    margin-bottom: 1em;
+    box-shadow: 0 .6em 1em  #04615e;
+    position: fixed;
+    top:0;
+    width: 100%;    
+    z-index: 100;
+}
+
+.navbar-header {
+    /* background-color: rgba(255, 255, 255, 0.856); */
+    padding-left: .5em;
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    /* background-color: rgba(255, 255, 255, 0.856); */
+    /* //background-color: #333; */
+    color: #333;
+}
+
+.navbar-brand {
+    /* background-color: rgba(255, 255, 255, 0.856); */
+    color: #0cd7cf;
+    font-size: 3em;
+    text-shadow: 0.05em 0.05em 0.05em #04615e;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-nav > li > a:hover {
+    background: #333;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.navbar-nav > li > a:active {
+    color: white
+}
+
+
+/*   Button Styles   */
+/* ============================================================= */
+
+.btn-success {
+    background-color:#0cd7cf;
+    border: none;
+}
+
+.comment-btn, .btn-success, .close-btn {
+    padding:.5em;
+    margin: .2em;
+    
+}
+
+/* .close-btn {} */
+
+.btn-success:hover, .btn-success:active {
+    color: #0cd7cf;
+    background-color: white;
+    border: .2em solid #0cd7cf;
+}
+
+.comment-btn:hover {
+    background-color: white;
+    border: .2em solid black;
+    color: black;
+}
+
+.btn-group {
+    width: 16em;
+}
+
+.delete {
+    position: relative;
+    float: right;
+    padding: 0;
+    border-radius: 4em;
+    height: 2em;
+    width: 2em;
+}
+
+/*   Panel Styles   */
+/* ============================================================= */
+
+ul {
+    list-style-type: none;
+    padding-left: -0;
+}
+
+.panel {
+    padding: 1em;
+}
+
+.panel, .jumbotron {
+    border-radius: 1em;
+}
+
+.author {
+    margin-top: 1.5em;
+    float: right;
+    border-bottom: .3em solid #0cd7cf;
+    
+}
+
+.article-link:hover {
+    text-decoration: none;
+}
+
+.title {
+    font-size: 1.5em;
+    border-left: .1em solid #0cd7cf;
+    padding-left: .3em;
+    text-decoration: none;
+}
+
+.title:hover {
+    color: #0cd7cf;
+
+}
+
+
+
+/* 
+  comment form style
+*/
+
+#new-comment-body {
+    width: 20em;
+}
+
+
+
+
+@media (max-width:768px){
+    body {
+        margin-top: 13em;
+    }
+
+    .title {
+        font-size: 1.5em;
+    }
+
+    .navbar-brand  {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 1151px) {
+    #hamburger {
+        margin-top: -3em;
+    }
+}
